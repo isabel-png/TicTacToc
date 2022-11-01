@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap"
+        android:paddingRight="@dimen/gap"
+        android:paddingLeft="@dimen/gap"
+        android:gravity="center">
+        <EditText android:id="@+id/name1"
+            android:layout_width="@dimen/layout_text_width"
+            android:layout_weight="@dimen/weight1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/gap"
+            android:gravity="left"
+            android:textSize="@dimen/name_text_size"
+            android:hint="@string/player1_name">
+        </EditText>
+        <ImageView android:id="@+id/image1"
+            android:layout_width="@dimen/player_pic_size"
+            android:layout_height="@dimen/player_pic_size"
+            android:src="@drawable/red"
+            android:onClick="onClick">
+        </ImageView>
+    </LinearLayout>
+    <RatingBar android:id="@+id/score1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/half_gap"
+        android:layout_gravity="center"
+        android:isIndicator="true"
+        android:numStars="@integer/max_score">
+
+    </RatingBar>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap"
+        android:paddingRight="@dimen/gap"
+        android:paddingLeft="@dimen/gap"
+        android:gravity="center">
+        <EditText android:id="@+id/name2"
+            android:layout_width="@dimen/layout_text_width"
+            android:layout_weight="@dimen/weight1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/gap"
+            android:gravity="left"
+            android:textSize="@dimen/name_text_size"
+            android:hint="@string/player2_name">
+        </EditText>
+        <ImageView android:id="@+id/image2"
+            android:layout_width="@dimen/player_pic_size"
+            android:layout_height="@dimen/player_pic_size"
+            android:src="@drawable/green"
+            android:onClick="myClickHandler">
+        </ImageView>
+    </LinearLayout>
+    <RatingBar android:id="@+id/score2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/half_gap"
+        android:layout_gravity="center"
+        android:isIndicator="true"
+        android:numStars="@integer/max_score">
+    </RatingBar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <Button android:id="@+id/start_button"
+            android:layout_width="@dimen/start_button_width"
+            android:layout_height="@dimen/start_button_height"
+            android:textSize="@dimen/name_text_size"
+            android:text="@string/start_button_text"
+            android:onClick="myClickHandler">
+        </Button>
+    </LinearLayout>
+</LinearLayout>

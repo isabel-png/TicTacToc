@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayGame">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/top_gap"
+            android:layout_marginLeft="@dimen/gap"
+            android:layout_marginRight="@dimen/gap"
+            android:layout_marginBottom="@dimen/gap"
+            android:paddingLeft="@dimen/gap"
+            android:paddingRight="@dimen/gap"
+            tools:layout_editor_absoluteX="@dimen/absolute_X"
+            tools:layout_editor_absoluteY="@dimen/absolute_Y">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="@dimen/player_pic_size"
+                android:layout_height="@dimen/player_pic_size"
+                android:src="@drawable/red"/>
+            <TextView
+                android:id="@+id/player_name"
+                android:layout_width="@dimen/layout_text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/gap"
+                android:layout_weight="@dimen/weight1"
+                android:gravity="center"
+                android:hint="@string/player1_name"
+                android:textSize="@dimen/name_text_size"/>
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="@dimen/player_pic_size"
+                android:layout_height="@dimen/player_pic_size"
+                android:src="@drawable/green"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/time_left"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/progress_bar_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/gap"
+            android:layout_marginRight="@dimen/gap"
+            android:max="@integer/bar_time"
+            tools:layout_editor_absoluteX="progress_absolute_X"
+            tools:layout_editor_absoluteY="progress_absolute_Y" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableLayout android:id="@+id/table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TableRow android:id="@+id/row_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="@string/tag0">
+
+                    <ImageButton android:id="@+id/button_1"
+                        android:layout_width="@dimen/grid_item_width"
+                        android:layout_height="@dimen/grid_item_height"
+                        android:onClick="myClickHandler"
+                        android:tag="@string/tag0"/>
+
+                    <ImageButton android:id="@+id/button_2"
+                        android:layout_width="@dimen/grid_item_width"
+                        android:layout_height="@dimen/grid_item_height"
+                        android:onClick="myClickHandler"
+                        android:tag="@string/tag1"/>
+
+                    <ImageButton android:id="@+id/button_3"
+                        android:layout_width="@dimen/grid_item_width"
+                        android:layout_height="@dimen/grid_item_height"
+                        android:onClick="myClickHandler"
+                        android:tag="@string/tag2"/>
+
+                </TableRow>
+
+                <TableRow android:id="@+id/row_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="@string/tag1">
+
+                    <ImageButton android:id="@+id/button_4"
+                        android:layout_width="@dimen/grid_item_width"
+                        android:layout_height="@dimen/grid_item_height"
+                        android:onClick="myClickHandler"
+                        android:tag="@string/tag0"/>
+
+                    <ImageButton android:id="@+id/button_5"
+                        android:layout_width="@dimen/grid_item_width"
+                        android:layout_height="@dimen/grid_item_height"
+                        android:onClick="myClickHandler"
+                        android:tag="@string/tag1"/>
+
+                    <ImageButton android:id="@+id/button_6"
+                        android:layout_width="@dimen/grid_item_width"
+                        android:layout_height="@dimen/grid_item_height"
+                        android:onClick="myClickHandler"
+                        android:tag="@string/tag2"/>
+
+                </TableRow>
+
+                <TableRow android:id="@+id/row_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="@string/tag2">
+
+                    <ImageButton android:id="@+id/button_7"
+                        android:layout_width="@dimen/grid_item_width"
+                        android:layout_height="@dimen/grid_item_height"
+                        android:onClick="myClickHandler"
+                        android:tag="@string/tag0"/>
+
+                    <ImageButton android:id="@+id/button_8"
+                        android:layout_width="@dimen/grid_item_width"
+                        android:layout_height="@dimen/grid_item_height"
+                        android:onClick="myClickHandler"
+                        android:tag="@string/tag1"/>
+
+                    <ImageButton android:id="@+id/button_9"
+                        android:layout_width="@dimen/grid_item_width"
+                        android:layout_height="@dimen/grid_item_height"
+                        android:onClick="myClickHandler"
+                        android:tag="@string/tag2"/>
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

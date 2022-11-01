@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.miami.cs.isabel_ogilvie.tictactoc.PlayGame">
+
+    <item
+        android:id="@+id/reset"
+        android:title="@string/reset"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/one_sec"
+        android:title="@string/one_sec"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/two_sec"
+        android:title="@string/two_sec"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/five_sec"
+        android:title="@string/five_sec"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/ten_sec"
+        android:title="@string/ten_sec"
+        app:showAsAction="never" />
+</menu>
